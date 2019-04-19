@@ -23,7 +23,7 @@
 #include "bh1750.h"
 
 
-#ifndef PKG_USING_BH1750FVI
+#ifdef PKG_USING_BH1750
 
 /*bh1750 device address */
 #define BH1750_ADDR 0x23
@@ -332,5 +332,5 @@ void bh1750(int argc, char *argv[])
 MSH_CMD_EXPORT(bh1750, bh1750 sensor function);
 
 
-#endif /* PKG_USING_BH1750FVI */
+#endif /* PKG_USING_BH1750 */
 
