@@ -59,7 +59,6 @@ static rt_err_t bh1750_read_regs(struct rt_i2c_bus_device *bus, rt_uint8_t len, 
     }
 }
 
-
 static rt_err_t bh1750_write_cmd(struct rt_i2c_bus_device *bus, rt_uint8_t cmd)
 {
     struct rt_i2c_msg msgs;
@@ -74,7 +73,6 @@ static rt_err_t bh1750_write_cmd(struct rt_i2c_bus_device *bus, rt_uint8_t cmd)
     else
         return -RT_ERROR;
 }
-
 
 static rt_err_t bh1750_start(bh1750_device_t dev)
 {
@@ -180,6 +178,7 @@ static void bh1750_filter_entry(void *device)
         dev->light_filter.index++;
     }
 }
+
 #endif /* BH1750_USING_SOFT_FILTER */
 
 /**
@@ -309,7 +308,7 @@ void bh1750(int argc, char *argv[])
 
                 /* read the sensor data */
                 light = bh1750_read_light(dev);
-                rt_kprintf("read bh1750 sensor intensity   : %d%d%d%d%d.%d lux\n", (int)(light * 10)/100000%10, (int)(light * 10)/10000%10, (int)(light * 10)/1000%10,  \
+                rt_kprintf("read bh1750 sensor intensity   : %d%d%d%d%d.%d lx\n", (int)(light * 10)/100000%10, (int)(light * 10)/10000%10, (int)(light * 10)/1000%10,  \
 																					(int)(light * 10)/100%10, (int)(light * 10)/10%10, (int)(light * 10)/1%10);
             }
             else
