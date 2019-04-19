@@ -7,17 +7,16 @@
 基本功能主要由传感器 `BH1750FVI` 决定：在输入电压为 `2.4v-3.6v` 范围内，测量光照强度的量程如下表所示：
 
 | 功能 | 量程          |
-| ---- | ------------- |
+| :------: |:------: |
 | 温度 | `1lx - 65535lx` |
 
-
 `BH1750FVI` 的测量精度和测量时间和测量模式有关，具体如下表所示：
-| 测量模式 			 | 测量时间 		| 测量精度 |
-| ------- 			 | ------------	| ------- |
-| H-resolution Mode2 |Typ. 120ms. 	| 0.5 lx  |
-| H-resolution Mode  |Typ. 120ms. 	| 1 lx  |
-| L-resolution Mode  |Typ. 16ms. 	| 4 lx  |
 
+| 测量模式| 测量时间 | 测量精度 |
+| :------:|:------: | :------: |
+| H-resolution Mode2| Typ. 120ms.|  0.5 lx |
+| H-resolution Mode | Typ. 120ms.| 1 lx |
+| L-resolution Mode | Typ. 16ms. | 4 lx |
 
 ### 1.1 目录结构
 
@@ -31,7 +30,7 @@
 
 ### 1.2 许可证
 
-BH1750 软件包遵循  Apache-2.0 许可，详见 LICENSE 文件。
+BH1750FVI 软件包遵循  Apache-2.0 许可，详见 LICENSE 文件。
 
 ### 1.3 依赖
 
@@ -148,4 +147,5 @@ msh />
 * 维护：[Sanjay_Wu](https://github.com/sanjaywu)
 * 主页：[https://github.com/sanjaywu/bh1750](https://github.com/sanjaywu/bh1750 "https://github.com/sanjaywu/bh1750")
 * 邮箱：sanjaywu@yeah.net
+
 
